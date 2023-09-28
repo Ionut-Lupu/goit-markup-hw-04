@@ -472,6 +472,11 @@ footer .logo {
   align-items: center;
 }
 
+.icon-wwd {
+  width: 70px;
+  height: 70px;
+}
+
 .cards-logo {
   display: flex;
   justify-content: space-between;
@@ -495,6 +500,9 @@ footer .logo {
 }
 
 .rc-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   flex-shrink: 0;
@@ -502,8 +510,15 @@ footer .logo {
   border: 1px solid #afb1b8;
 }
 
-.social-media-container {
+.rc-logo  svg {
+  width: 106px;
+  height: 60px;
 
+}
+
+
+
+.social-media-container {
 width: 206px;
 margin-left: 94px;
 }
@@ -536,5 +551,9 @@ fill: #afb1b8
 }
 
 .icon-social-media:hover {
+  fill: #2196f3;
+}
+ 
+/*.logo-custumers:hover {
   fill: #2196f3;
 }
