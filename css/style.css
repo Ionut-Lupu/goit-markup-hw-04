@@ -244,11 +244,18 @@ h2 {
   margin: 94px auto;
 }
 
+
 .what-we-do-container {
   padding: 0px;
   max-width: 1200px;
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  /*gap: 40px;*/
   margin: 94px auto auto;
+}
+
+.what-we-do-container li {
+  max-width: 270px;
 }
 
 .what-we-do h3 {
@@ -472,9 +479,7 @@ footer .logo {
   margin-top: 0px;
 }
 
-.what-we-do-container {
-  display: flex;
-}
+
 
 .what-we-do-photos {
   padding: 0px;
@@ -588,7 +593,7 @@ footer .logo {
   margin: 16px 32px 30px 32px;
   width: 206px;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .icon-social-media svg {
@@ -596,12 +601,16 @@ footer .logo {
   height: 44px;
   padding: 12px;
   flex-shrink: 0;
-  fill: #afb1b8;
+  color: #afb1b8;
+}
+
+.icon-social-media {
+  fill: currentColor;
 }
 
 .icon-social-media:hover {
   background: #2196f3;
   fill: #ffffff;
   border-radius: 50%;
-  cursor: initial;
+  cursor: inherit;
 }
