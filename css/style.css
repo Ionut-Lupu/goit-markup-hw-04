@@ -49,9 +49,18 @@ body {
 }
 
 .hover-icon  {
+  display: flex;
+  align-items: center;
   fill: currentColor;
   color: #757575;
   padding-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  gap: 10px;
 }
 
 .logo {
@@ -90,17 +99,6 @@ nav a {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-}
-
-.contacts {
-  text-decoration: none;
-  color: #757575;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  padding: 30px 0;
 }
 
 .current {
@@ -438,6 +436,13 @@ h2 {
   margin-right: 0px;
 }
 
+.photo-filter-list:hover {
+  border: 1px solid #EEE;
+background: #FFF;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+cursor: pointer;
+}
+
 .photo-filter {
   display: flex;
   align-content: flex-start;
@@ -549,27 +554,20 @@ h2 {
   cursor: inherit;
 }
 
-.regular-custumers li {
-  width: 170px;
-  height: 92px;
-  flex-shrink: 0;
-}
 
 .rc-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
 
 .logo-custumers svg {
-  width: 106px;
-  height: 60px;
-  padding: ;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
   flex-shrink: 0;
 }
 
@@ -609,11 +607,11 @@ footer .logo {
   padding-top: 60px;
 }
 
-.social-media-container {
+.footer-social-media-container {
   margin-left: 94px;
 }
 
-.social-media-container h3 {
+.footer-social-media-container h3 {
   margin-top: 10px;
   color: #fff;
   font-family: Roboto;
@@ -625,8 +623,27 @@ footer .logo {
   text-transform: uppercase;
 }
 
-footer .icons-social-media-container {
-  margin: o;
+.footer-icons-social-media-container {
+ 
+  width: 206px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+.footer-icon-social-media svg {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  flex-shrink: 0;
+  color: #ffffff;
+  fill: currentColor;
+}
+
+
+
+.footer-icon-social-media:hover {
+  background: #2196f3;
+  fill: #ffffff;
+  border-radius: 50%;
+  cursor: inherit;
 }
